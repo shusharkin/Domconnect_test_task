@@ -8,6 +8,10 @@
 git clone https://github.com/shusharkin/Domconnect_test_task.git
 cd Domconnect_test_task
 ```
+Установить зависимости:
+```
+pip install -r requirements.txt
+```
 Заполнить файл .env в корне проекта и добавить в него ваш email и пароль:
 ```
 EMAIL=your-email@example.com
