@@ -6,8 +6,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
 import os
 
-
 load_dotenv()
+
 
 EMAIL = os.getenv('EMAIL')
 PASSWORD = os.getenv('PASSWORD')
@@ -16,8 +16,10 @@ WEBSITE = "https://belurk.online/"
 IP_INDEX = 5
 EXPIRES_INDEX = 9
 
+
 if not EMAIL or not PASSWORD:
     raise Exception("EMAIL и PASSWORD должны быть указаны в .env файле")
+
 
 def login(driver, EMAIL, PASSWORD):
     login_button = driver.find_element(By.LINK_TEXT, 'Вход')
@@ -32,6 +34,7 @@ def login(driver, EMAIL, PASSWORD):
     password_input.send_keys(PASSWORD)
 
     signIn_form.submit()
+
 
 def parse_proxy_table(driver, IP_INDEX, EXPIRES_INDEX):
     IPv4_button = driver.find_element(By.LINK_TEXT, 'IPv4 Shared Прокси')
@@ -53,6 +56,7 @@ def parse_proxy_table(driver, IP_INDEX, EXPIRES_INDEX):
         proxy_data.append((ip, expires))
 
     return proxy_data
+
 
 try:
     driver = webdriver.Chrome()
