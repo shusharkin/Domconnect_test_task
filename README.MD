@@ -8,16 +8,16 @@
 git clone https://github.com/shusharkin/Domconnect_test_task.git
 cd Domconnect_test_task
 ```
-Установить зависимости:
+### Установить зависимости:
 ```
 pip install -r requirements.txt
 ```
-Заполнить файл .env в корне проекта и добавить в него ваш email и пароль:
+### Заполнить файл .env в корне проекта и добавить в него ваш email и пароль:
 ```
 EMAIL=your-email@example.com
 PASSWORD=your-password
 ```
-### Использование
+## Использование
 Запустите скрипт с помощью следующей команды:
 ```
 python belurk_parser.py
