@@ -5,7 +5,7 @@
 ## Установка
 ### Клонировать репозиторий:
 ```
-git clone https://github.com/shusharkin/Domconnect_test_task.git
+git clone git@github.com:shusharkin/Domconnect_test_task.git
 cd Domconnect_test_task
 ```
 ### Установить зависимости:
